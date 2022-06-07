@@ -77,8 +77,8 @@ In this project, We will build a Github repository from scratch and create a sca
 - Create a Python Virtual Environment to run your application
 
   ```bash
-    python3 -m venv ~/.flask-ml-azure
-    source ~/.flask-ml-azure/bin/activate
+    python3 -m venv ~/.flask-ml-project-2
+    source ~/.flask-ml-project-2/bin/activate
   ```
 
  - Install dependencies
@@ -142,15 +142,15 @@ Azure App service offers multiple ways to create a new application. In this sect
 - Create a Python Virtual Environment to run your application
 
     ```bash
-        python3 -m venv ~/.flask-ml-azure
-        source ~/.flask-ml-azure/bin/activate
+        python3 -m venv ~/.flask-ml-project-2
+        source ~/.flask-ml-project-2/bin/activate
     ```
 
  - Install dependencies
    ```bash
     make all
     ```
-    - ![Screenshot of Make all command](screenshots/make-all-result.png)
+    ![Screenshot of Make all command](screenshots/make-all-result.png)
     
 - Deploy application into the our resource group
 
@@ -161,7 +161,7 @@ Azure App service offers multiple ways to create a new application. In this sect
 - Our application will be deployed and available at
   **(https://${app-name}azurewebsites.net)** default port is 443
 
- ![Screenshot of application available](screenshots/application-avaiable.png)
+  ![Screenshot of application available](screenshots/application-avaiable.png)
 
 **Test ML Application:**
 
@@ -182,7 +182,7 @@ Azure App service offers multiple ways to create a new application. In this sect
 
 You can inspect the logs from your running application here
 
-   ***https://<app-name>.scm.azurewebsites.net/api/logs/docker***
+   https://<app-name>.scm.azurewebsites.net/api/logs/docker
 
 Azure App service provides ability to view the application logs. Application logs was be accessed using Azure CLI commands
     ```bash
@@ -271,7 +271,7 @@ In this project we use Azure Pipelines for Continuous Delivery of Flask ML App.
 
 - Create an Azure DevOps project and connect to Azure
 
-![Azure Project Create](screenshots/devops-create-new-project.png)
+  ![Azure Project Create](screenshots/devops-create-new-project.png)
 
 - Once the project is created, from the new project page, select Project settings from the left navigation. On the Project Settings page, select Pipelines > Service connections, then select New service connection
 ![Azure Project Settings](screenshots/new-service-connection.png)
@@ -300,26 +300,29 @@ In this project we use Azure Pipelines for Continuous Delivery of Flask ML App.
 
 - In the New Pipeline Interface -> Select GitHub as Repo -> Select the Project 
 
-![New Pipeline](screenshots/select-github-as-repo.png)
-![New Pipeline2](screenshots/select-repo-github.png)
+  ![New Pipeline](screenshots/select-github-as-repo.png)
+
+  ![New Pipeline2](screenshots/select-repo-github.png)
 
 - In Configure, select *Python to Linux Azure Webapp* -> select the deployed app -> Validate and Review
-![New Pipeline3](screenshots/configure-your-pipeline.png)
-![New Pipeline4](screenshots/select-an-azure-subscription.png)
-![New Pipeline5](screenshots/select-web-app-name.png)
+  ![New Pipeline3](screenshots/configure-your-pipeline.png)
+
+  ![New Pipeline4](screenshots/select-an-azure-subscription.png)
+
+  ![New Pipeline5](screenshots/select-web-app-name.png)
 
 - In the Review, validate the Pipeline YAML and hit the *Save and Run* button, you might be prompted to save the code into GitHub
-![New Pipeline6](screenshots/review-your-pipeline.png)
+  ![New Pipeline6](screenshots/review-your-pipeline.png)
 
 - We can also Customize the pipeline to our needs as well
 
 - Now that the pipeline is configured, we can Continuously Deliver our ML Flask App, run the pipeline
 
-![PipelineBuild](screenshots/build-job.png)
+  ![PipelineBuild](screenshots/build-job.png)
 
-![PipelineDeploy](screenshots/deployment-job.png)
+  ![PipelineDeploy](screenshots/deployment-job.png)
 
-![PipelineStage](screenshots/pipeline-build-finish.png)
+  ![PipelineStage](screenshots/pipeline-build-finish.png)
 
 ### Clean up resources
 To avoid incurring charges on the Azure resources created in this project, delete the resource group that contains the App Service and the App Service Plan.
