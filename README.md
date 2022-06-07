@@ -181,7 +181,7 @@ Azure App service offers multiple ways to create a new application. In this sect
 **Logs of Azure Webapp:**
 
 Azure App service provides ability to view the application logs. Application logs was be accessed using Azure CLI commands
-    ```bash
+    ```
     az webapp log tail --name flask-app-thoanvtt --resource-group vothoan2014_rg_0674
     ```
 
