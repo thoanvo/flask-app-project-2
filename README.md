@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/thoanvo/flask-app-project-2/workflows/Python%20application/badge.svg)](https://github.com/thoanvo/flask-app-project-2/actions)
+[![Actions Status](https://github.com/thoanvo/flask-app-project-2/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)](https://github.com/thoanvo/flask-app-project-2/actions)
 
 # Table of Contents
 
