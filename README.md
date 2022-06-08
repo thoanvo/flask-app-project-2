@@ -159,6 +159,7 @@ Azure App service offers multiple ways to create a new application. In this sect
     ```bash
     az webapp up -n flask-app-thoanvtt --resource-group vothoan2014_rg_0674 --sku FREE
     ```
+**The Azure CLI commands in a Bash script called `commands.sh` file in the GitHub repo contains the steps Set up Azure CLI and Deploy Application**
 
 - Our application will be deployed and available at
   **(https://${app-name}azurewebsites.net)** default port is 443
@@ -185,11 +186,14 @@ Azure App service offers multiple ways to create a new application. In this sect
 
   ![Screenshot of Test Result](screenshots/make-predict-azure-app-test.png)
 
-- The application running with a load test with locust
+- Run the script to load test with locust
 
     ```bash
-        locustfile.py
+        locust
     ```
+  ![Screenshot of Run Locust Test](screenshots/run-locust.png)
+
+  - The application running with a load test with locust
 
   ![Screenshot of Locust Test Result](screenshots/locust-test-run.png)
 
