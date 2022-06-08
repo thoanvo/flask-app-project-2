@@ -185,6 +185,13 @@ Azure App service offers multiple ways to create a new application. In this sect
 
   ![Screenshot of Test Result](screenshots/make-predict-azure-app-test.png)
 
+- The application running with a load test with locust
+
+    ```bash
+        locustfile.py
+    ```
+
+  ![Screenshot of Locust Test Result](screenshots/locust-test-run.png)
 
 **Logs of Azure Webapp:**
 
