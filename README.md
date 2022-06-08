@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/thoanvo/flask-app-project-2/workflows/Python%20application/badge.svg)](https://github.com/thoanvo/flask-app-project-2/actions)
+
 # Table of Contents
 
 - **[Overview](#Overview)**
@@ -162,6 +164,12 @@ Azure App service offers multiple ways to create a new application. In this sect
   **(https://${app-name}azurewebsites.net)** default port is 443
 
   ![Screenshot of application available](screenshots/application-avaiable.png)
+  
+ - Azure app service from the Azure portal
+  ![Screenshot of Azure app service from the Azure portal](screenshots/azure-app-service-from-portal.png)
+  
+  - Web application was deployed successfully using azure pipelines from Deployment Center
+  ![Screenshot of Azure app service from the Deployment Center](screenshots/azure-app-service-deployment-center-portal.png)
 
 **Test ML Application:**
 
@@ -329,4 +337,4 @@ To avoid incurring charges on the Azure resources created in this project, delet
 
 ## Demo
 
-[CI/CD Demo Link](https://youtu.be)
+[CI/CD Demo Link](https://youtu.be/1MNKBPZUMtU)
